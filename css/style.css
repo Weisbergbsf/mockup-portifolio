@@ -3,13 +3,19 @@ body {
     color: #2d3c49;
     font-weight: 300;
 }
-
-
 .graphic-img {
     max-width: 100%;
 }
 .text-muted {
     color: #7d97ad;
+}
+
+.text-right{
+    max-height: 140px;
+}
+.separator-line {
+    border-bottom: 3px solid #7d97ad;
+    margin: 0 0 20px 0;
 }
 .text-thin{
     font-weight: 100;
@@ -20,66 +26,61 @@ body {
     color: #2d3c49;
 }
 .title-logo {
-    max-width: 50%;
-    max-height: 50%;
-    margin-top: 20px;
-}
-hr {
-    border: 2px solid #7d97ad;
+    max-height: 120px;
 }
 
+@media only screen and (min-width: 1200px) {
+    .text-muted {
+        padding-left: 25px;
+    }
+}
 
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .title-super {
         font-size: 40px;
     }
-    .header {
+    .text-muted {
+        padding-left: 100px;
+    }
+    header {
         max-width: 100%;
-        border: 1px solid;
     }
     .logo-img {
-        border: 1px solid;
         max-width: 50%;
     }
     .text-right {
         max-width: 50%;
-        border: 1px solid;
     }
-    .header img {
+    header img {
         max-width: 60%;
-        max-height: 60%;
-        
+        max-height: 60%;  
     }
 }
 
-@media (max-width: 490px) {
+@media only screen and (max-width: 530px) {
 
     .title-super {
         font-size: 30px;
     }
 
-    .header {
+    header {
         max-width: 100%;
         text-align: center;
     }
-    .header img {
-        max-height: 100%;
+    header img {
+        max-height: 70%;
         text-align: center;
     }
 
-    .header h1, h4 {
+    header h1, h4 {
         text-align: center;
         
     }
-
     .logo-img {
-        border: 1px solid;
         max-width: 100%;
     }
     .text-right {
         max-width: 100%;
-        border: 1px solid;
     }
 
 }
